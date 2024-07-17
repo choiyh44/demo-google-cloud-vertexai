@@ -34,7 +34,7 @@ class VertexAiUtilTest {
 
     @Test
     void sendoMessageAndReceiveResponse_YesNo() throws IOException {
-        String message = "다음 글에서 금융상품의 예금자보호 여부를 확인해줘. 보호되는 경우 Yes, 보호되지 않는 경우 No로 답변해줘.";
+        String message = "다음 글에서 금융상품의 내용 중 예금자보호 여부를, 보호되는 경우 'YES', 보호되지 않는 경우 'NO'로 답변해줘.";
         String inputPath = "src/main/resources/sample.txt";
         String text = readString(Path.of(inputPath));
 
