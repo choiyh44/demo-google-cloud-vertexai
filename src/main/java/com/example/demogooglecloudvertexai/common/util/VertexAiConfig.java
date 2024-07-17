@@ -2,11 +2,10 @@ package com.example.demogooglecloudvertexai.common.util;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
-@ConfigurationProperties(prefix = "google.vertaxai")
+@ConfigurationProperties(prefix = "google.vertexai")
 @Data
-public class VertaxAiConfig {
+public class VertexAiConfig {
     private String projectId;
     private String location;
     private String modelName;

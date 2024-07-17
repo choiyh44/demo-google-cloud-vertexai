@@ -15,9 +15,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Slf4j
-class VertaxAiUtilTest {
+class VertexAiUtilTest {
     @Autowired
-    private VertaxAiUtil VertaxAiUtil;
+    private VertexAiUtil vertexAiUtil;
 
     @Test
     void sendoMessageAndReceiveResponse() throws IOException {
@@ -25,7 +25,7 @@ class VertaxAiUtilTest {
         String inputPath = "src/main/resources/sample.txt";
         String text = readString(Path.of(inputPath));
 
-        GenerateContentResponse result = VertaxAiUtil.sendoMessageAndReceiveResponse(message + text);
+        GenerateContentResponse result = vertexAiUtil.sendoMessageAndReceiveResponse(message + text);
 
         log.info("response text: {}", ResponseHandler.getText(result));
 
@@ -38,7 +38,7 @@ class VertaxAiUtilTest {
         String inputPath = "src/main/resources/sample.txt";
         String text = readString(Path.of(inputPath));
 
-        GenerateContentResponse result = VertaxAiUtil.sendoMessageAndReceiveResponse(message + text);
+        GenerateContentResponse result = vertexAiUtil.sendoMessageAndReceiveResponse(message + text);
 
         log.info("response text: {}", ResponseHandler.getText(result));
 
