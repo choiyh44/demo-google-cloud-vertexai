@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: demo-google-cloud-vertexai
+
+google:
+  vertaxai:
+    project-id: my-project-1560329269794
+    location: asia-northeast3
+    model-name: gemini-1.0-pro
+
